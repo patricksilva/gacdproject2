@@ -68,5 +68,5 @@ run <- function(){
                       group_by(Source, Label) %>%
                       summarise_each(funs(mean))   
 
-  write.table(pkg.env$trainData,file = "tidy-data-summary.txt", row.name = FALSE)
+  write.table(pkg.env$summary, file = "tidy-data-summary.txt", row.name = FALSE)
 }
